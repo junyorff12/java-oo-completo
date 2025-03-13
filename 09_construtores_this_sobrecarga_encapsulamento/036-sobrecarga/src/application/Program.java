@@ -12,7 +12,7 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		// Construtor padrão.
+		// Construtor padrao.
 		Product p = new Product();
 
 		System.out.println("Enter product data:");
