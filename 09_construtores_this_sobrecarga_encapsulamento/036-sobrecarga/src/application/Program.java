@@ -13,7 +13,7 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 
 		// Construtor padrao.
-		Product p = new Product();
+		//Product p = new Product();
 
 		System.out.println("Enter product data:");
 		System.out.print("Name: ");
