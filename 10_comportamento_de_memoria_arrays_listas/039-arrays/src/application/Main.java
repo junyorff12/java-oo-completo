@@ -27,7 +27,7 @@ public class Main {
 			products[i] = new Product(name, price);
 			sc.nextLine();
 		}
-		
+			
 		double total = 0;
 		for (int i = 0; i < products.length; i++) {
 			total += products[i].getPrice();
