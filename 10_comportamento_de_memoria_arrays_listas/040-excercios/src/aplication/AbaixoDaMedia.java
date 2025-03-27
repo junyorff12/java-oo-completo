@@ -37,5 +37,7 @@ public class AbaixoDaMedia {
                 System.out.printf("%.1f%n", num);
             }
         }
+
+        sc.close();
     }
 }
