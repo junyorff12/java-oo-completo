@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1723c5f3-d16f-4b57-8ef6-0c08c61d9c29" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../09_construtores_this_sobrecarga_encapsulamento/035-construtores_palavra-this/bin/application/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/../09_construtores_this_sobrecarga_encapsulamento/035-construtores_palavra-this/bin/application/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09_construtores_this_sobrecarga_encapsulamento/035-construtores_palavra-this/bin/entities/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../09_construtores_this_sobrecarga_encapsulamento/035-construtores_palavra-this/bin/entities/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/10_comportamento_de_memoria_arrays_listas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/_mylyn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/039-arrays/039-arrays.iml" beforeDir="false" afterPath="$PROJECT_DIR$/039-arrays/039-arrays.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/040-excercios/040-excercios.iml" beforeDir="false" afterPath="$PROJECT_DIR$/040-excercios/040-excercios.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/040-excercios/src/aplication/SomaArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/040-excercios/src/aplication/SomaArray.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2x0pyRIKgUKkq5E8VLqYn29Pdnu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SomaArray.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  }
+}</component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1723c5f3-d16f-4b57-8ef6-0c08c61d9c29" name="Changes" comment="" />
+      <created>1747085113904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747085113904</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/039-arrays/039-arrays.iml" filepath="$PROJECT_DIR$/039-arrays/039-arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/040-excercios/040-excercios.iml" filepath="$PROJECT_DIR$/040-excercios/040-excercios.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/10_comportamento_de_memoria_arrays_listas.iml" filepath="$PROJECT_DIR$/.idea/10_comportamento_de_memoria_arrays_listas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_comportamento_de_memoria_arrays_listas.iml" filepath="$PROJECT_DIR$/10_comportamento_de_memoria_arrays_listas.iml" />
     </modules>
   </component>
 </project>

@@ -14,7 +14,7 @@ public class SomaArray {
 		int n = sc.nextInt();
 		double[] numbers = new double[n];
 
-		System.out.print("Digite " + n + " numeros.");
+		System.out.println("Digite " + n + " numeros.");
 
 		for (int i = 0; i < numbers.length; i++) {
 			System.out.print("Digite um numero: ");
