@@ -17,7 +17,7 @@ public class Pensionato {
         qtdQuartos = sc.nextInt();
         
         	
-        	sc.nextLine();
+        sc.nextLine();
         for(int i = 0; i < qtdQuartos; i++) {
         	System.out.println("Aluguel " + (i+1));
         	System.out.print("Nome: ");
