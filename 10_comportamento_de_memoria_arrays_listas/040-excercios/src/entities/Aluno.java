@@ -3,10 +3,16 @@ package entities;
 public class Aluno {
     private String nome;
     private double[] notas;
+    private String email;
 
     public Aluno(String nome, double[] notas) {
         this.nome = nome;
         this.notas = notas;
+    }
+    
+    public Aluno(String nome, String email) {
+        this.nome = nome;
+        this.email = email;
     }
 
     public String getNome() {
