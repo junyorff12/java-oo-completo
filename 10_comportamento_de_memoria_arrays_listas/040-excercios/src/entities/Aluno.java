@@ -18,6 +18,10 @@ public class Aluno {
     public String getNome() {
         return nome;
     }
+    
+    public String getEmail() {
+    	return email;
+    }
 
     public void setNome(String nome) {
         this.nome = nome;
