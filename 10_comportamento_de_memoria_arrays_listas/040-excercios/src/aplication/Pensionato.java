@@ -17,11 +17,12 @@ public class Pensionato {
         qtdQuartos = sc.nextInt();
         
         	
-        sc.nextLine();
-        for(int i = 0; i < qtdQuartos; i++) {
-        	System.out.println("Aluguel " + (i+1));
+        
+        for(int i = 1; i <= qtdQuartos; i++) {
+        	System.out.println("Aluguel #" + i + ":");
         	System.out.print("Nome: ");
         	String name = sc.nextLine();
+        	sc.nextLine();
         	System.out.print("Email: ");
         	String email = sc.nextLine();
         	System.out.print("Quarto: ");
@@ -30,11 +31,10 @@ public class Pensionato {
         	quartos[quarto] = new Aluno(name, email);
         	
         }
-        
         System.out.println("Quartos ocupados: ");
         for(int i = 0; i < quartos.length; i++) {        	
         	if (quartos[i] != null) {
-        		System.out.printf("%d: %s, %s ", i, quartos[i].getNome(), quartos[i].getEmail());
+        		System.out.printf("%d: %s, %s %n", i, quartos[i].getNome(), quartos[i].getEmail());
         	}
         	
         }
