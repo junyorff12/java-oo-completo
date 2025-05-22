@@ -21,8 +21,8 @@ public class Pensionato {
         for(int i = 1; i <= qtdQuartos; i++) {
         	System.out.println("Aluguel #" + i + ":");
         	System.out.print("Nome: ");
-        	String name = sc.nextLine();
         	sc.nextLine();
+        	String name = sc.nextLine();
         	System.out.print("Email: ");
         	String email = sc.nextLine();
         	System.out.print("Quarto: ");
