@@ -3,8 +3,12 @@ package application;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Main!!!!");
+		String[] vect = new String[] {"Maria", "Bob", "Alex"};
 
+		for(String nome: vect) {
+			System.out.println(nome);
+		}
 	}
+	
 
 }
