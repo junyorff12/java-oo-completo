@@ -2,12 +2,12 @@ package entities;
 
 import java.math.BigDecimal;
 
-public class Emploee {
+public class Employee {
 	private Integer id;
 	private String nome;
 	private BigDecimal salary;
 	
-	public Emploee(Integer id, String nome, BigDecimal salary) {
+	public Employee(Integer id, String nome, BigDecimal salary) {
 		this.id = id;
 		this.nome = nome;
 		this.salary = salary;
@@ -35,7 +35,8 @@ public class Emploee {
 	public void aumentarSalario(double percentual) {
 		this.salary = this.salary.add(
 				(this.salary.multiply(
-						BigDecimal.valueOf(percentual).divide(BigDecimal.valueOf(100))
+						BigDecimal.valueOf(percentual)
+						.divide(BigDecimal.valueOf(100))
 						)));
 	}
 	
