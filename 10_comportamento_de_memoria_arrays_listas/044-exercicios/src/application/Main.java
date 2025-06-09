@@ -22,6 +22,12 @@ public class Main {
 			System.out.println("Employee #" + employee);
 			System.out.print("Id:");
 			int id = sc.nextInt();
+			
+			if (idCheck(funcionarios, id) != null) {
+				System.out.println("Id ja registrado, informe outro ID:");
+				id = sc.nextInt();
+			}
+			
 			System.out.print("Nome:");
 			String nome = sc.nextLine();
 			sc.nextLine();
@@ -36,8 +42,8 @@ public class Main {
 
 	}
 	
-	public static boolean idCheck() {
-		return true;
+	public static Employee idCheck(List<Employee> funcionarios, int id) {
+		return funcionarios.stream().filter(x -> x.getId() == id).findAny().orElse(null);	
 	}
 
 }
