@@ -51,8 +51,6 @@ public class Main {
 		String name = lista.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null);
 		
 		System.out.println(name);
-		
-		
+				
 	}
-
 }
