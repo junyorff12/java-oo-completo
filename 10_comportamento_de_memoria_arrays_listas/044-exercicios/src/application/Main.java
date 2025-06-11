@@ -44,9 +44,14 @@ public class Main {
 			
 			double porcentagem = sc.nextDouble();
 			
-			aumentoDeSalario(funcionarioId, porcentagem);
+			aumentoDeSalario(funcionarios, funcionarioId, porcentagem);
 			
 		}
+		
+		System.out.println("Lista de funcionarios:");
+		funcionarios.stream()
+			.forEach(x -> System.out.println(
+						x.getId() + "," + x.getNome() + "," + x.getSalary()));
 		
 		sc.close();
 
@@ -57,8 +62,8 @@ public class Main {
 	}
 	
 	public static void aumentoDeSalario(List<Employee> funcionarios, int id, double porcentagem) {
-		BigDecimal novoSalario = 
-		funcionarios.stream().filter(x -> if(x.getId() == id) { x.setSalary() });
+		funcionarios.stream().filter(x -> x.getId() == id)
+		.forEach(x -> x.aumentarSalario(porcentagem));
 	}
 
 }
