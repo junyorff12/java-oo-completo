@@ -29,8 +29,8 @@ public class Main {
 			}
 			
 			System.out.print("Nome:");
+			sc.nextLine();//limpando o enter
 			String nome = sc.nextLine();
-			sc.nextLine();
 			System.out.print("Salario:");
 			BigDecimal salario = sc.nextBigDecimal();
 			
