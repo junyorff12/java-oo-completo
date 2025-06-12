@@ -3,6 +3,7 @@ package application;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Employee;
@@ -10,6 +11,8 @@ import entities.Employee;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
 		List<Employee> funcionarios = new ArrayList<Employee>();
@@ -54,7 +57,7 @@ public class Main {
 		aumentoDeSalario(funcionarios, funcionarioId, porcentagem);
 
 		System.out.println("Lista de funcionarios:");
-		funcionarios.stream().forEach(x -> System.out.println(x.getId() + "," + x.getNome() + "," + x.getSalary()));
+		funcionarios.stream().forEach(x -> System.out.printf("%d, %s, %.2f", x.getId(), x.getNome(), x.getSalary()));
 
 		sc.close();
 
