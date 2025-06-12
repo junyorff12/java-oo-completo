@@ -57,7 +57,7 @@ public class Main {
 		aumentoDeSalario(funcionarios, funcionarioId, porcentagem);
 
 		System.out.println("Lista de funcionarios:");
-		funcionarios.stream().forEach(x -> System.out.printf("%d, %s, %.2f", x.getId(), x.getNome(), x.getSalary()));
+		funcionarios.stream().forEach(funcionario -> System.out.println(funcionario));
 
 		sc.close();
 
