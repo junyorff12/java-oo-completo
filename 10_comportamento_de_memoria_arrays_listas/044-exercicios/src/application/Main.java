@@ -21,8 +21,7 @@ public class Main {
 		int numFuncionarios = sc.nextInt();
 
 		for (int i = 0; i < numFuncionarios; i++) {
-			int employee = i + 1;
-			System.out.println("Employee #" + employee);
+			System.out.println("Employee #" + (i + 1));
 			System.out.print("Id:");
 			int id = sc.nextInt();
 
