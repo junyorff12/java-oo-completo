@@ -69,7 +69,8 @@ public class Main {
 	}
 
 	public static void aumentoDeSalario(List<Employee> funcionarios, int id, double porcentagem) {
-		funcionarios.stream().filter(x -> x.getId() == id).forEach(x -> x.aumentarSalario(porcentagem));
+		Employee funcionario = funcionarios.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+		funcionario.aumentarSalario(porcentagem);
 	}
 
 }
