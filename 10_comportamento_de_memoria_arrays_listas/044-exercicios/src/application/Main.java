@@ -42,8 +42,10 @@ public class Main {
 		System.out.print("Entre com o funcionario que terá salario aumentado:");
 
 		int funcionarioId = sc.nextInt();
+		
+		Employee employee = idCheck(funcionarios, funcionarioId);
 
-		if (idCheck(funcionarios, funcionarioId) == null) {
+		if (employee == null) {
 			System.out.println("Digite um id válido conforme a listagem abaixo:");
 			funcionarios.stream().forEach(x -> System.out.println(x.getId()));
 			funcionarioId = sc.nextInt();
