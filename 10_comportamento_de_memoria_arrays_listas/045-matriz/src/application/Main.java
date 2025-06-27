@@ -14,10 +14,14 @@ public class Main {
 			int[][] matriz = new int[n][n];
 			
 			for(int i = 0; i < n; i++) {
-				System.out.println("Digite os numeros da linha " + (i + 1));
 				for (int j = 0; j < n; j++) {
-					System.out.println("Digite os numeros da coluna " + (i + 1));
 					matriz[i][j] = sc.nextInt();
+				}
+			}
+			 
+			for (int i = 0; i < matriz.length; i++) {
+				for (int j = 0; j < matriz.length; j++) {
+					System.out.println(matriz[i][i]);
 				}
 			}
 			
