@@ -1,13 +1,13 @@
 package application;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
+import java.util.Set;
 
 public class Iterador {
 
 	public static void main(String[] args) {
-		List<Integer> nums = new ArrayList<>();
+		Set<Integer> nums = new HashSet<>();
 		
 		nums.add(1);
 		nums.add(2);
