@@ -12,14 +12,13 @@ public class Iterador {
 		nums.add(1);
 		nums.add(2);
 		nums.add(3);
+		nums.add(23);
 		
 		Iterator<Integer> it = nums.iterator();
 		
 		while(it.hasNext()) {
 			System.out.println(it.next());
 		}
-		
-		
 
 	}
 
