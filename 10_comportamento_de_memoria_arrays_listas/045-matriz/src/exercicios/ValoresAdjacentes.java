@@ -13,6 +13,18 @@ public class ValoresAdjacentes {
 		
 		int[][] matriz = new int[m][n];
 		
+		System.out.println("Digite o conteúdo da Matriz:");
+		for(int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				matriz[i][j] = sc.nextInt();
+			}
+		}
+		
+		for(int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				System.out.println(matriz[i][j]);
+			}
+		}
 		
 		
 		sc.close();
