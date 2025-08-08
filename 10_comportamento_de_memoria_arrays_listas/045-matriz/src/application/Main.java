@@ -13,14 +13,14 @@ public class Main {
 			
 			int[][] matriz = new int[n][n];
 			
-			for(int i = 0; i < n; i++) {
-				for (int j = 0; j < n; j++) {
+			for(int i = 0; i < matriz.length; i++) {
+				for (int j = 0; j < matriz[i].length; j++) {
 					matriz[i][j] = sc.nextInt();
 				}
 			}
 			 
 			for (int i = 0; i < matriz.length; i++) {
-				for (int j = 0; j < matriz.length; j++) {
+				for (int j = 0; j < matriz[i].length; j++) {
 					System.out.println(matriz[i][i]);
 				}
 			}
