@@ -5,44 +5,45 @@ import java.util.Scanner;
 public class ValoresAdjacentes {
 
 	public static void main(String[] args) {
+
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Digite o numero de linhas e de colunas da matriz:");
+		System.out.print("Digite os valores de m e n:");
 		
 		int m = sc.nextInt();
 		int n = sc.nextInt();
+		int[][] mat = new int[m][n];
 		
-		int[][] matriz = new int[m][n];
+		System.out.print("Preencha a matriz:");
 		
-		System.out.println("Digite o conteúdo da Matriz:");
-		for(int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz[i].length; j++) {
-				matriz[i][j] = sc.nextInt();
+		for (int i=0; i<mat.length; i++) {
+			for (int j=0; j<mat[i].length; j++) {
+				mat[i][j] = sc.nextInt();
 			}
 		}
 		
-		System.out.println("Digite um numero da matriz para análise.");
-		int num = sc.nextInt();
+		System.out.print("Digite o numero para busca:");
+		int x = sc.nextInt();
 		
-		for(int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz[i].length; j++) {
-				System.out.print(matriz[i][j]);
-				
-				if(matriz[i][j] == num) {
-					System.out.println("Position " + i + "," + j);
-					if(matriz[i][j-1] != ) System.out.println(matriz[i][j-1]);
-					System.out.println("Right: " + matriz[i][j-1]);
-					System.out.println("Down: " + matriz[i][j-1]);
-					System.out.println("Left: " + matriz[i][j-1]);
+		for (int i=0; i<mat.length; i++) {
+			for (int j=0; j<mat[i].length; j++) {
+				if (mat[i][j] == x) {
+					System.out.println("Position " + i + "," + j + ":");
+					if (j > 0) {
+						System.out.println("Left: " + mat[i][j-1]);
+					}
+					if (i > 0) {
+						System.out.println("Up: " + mat[i-1][j]);
+					}
+					if (j < mat[i].length-1) {
+						System.out.println("Right: " + mat[i][j+1]);
+					}
+					if (i < mat.length-1) {
+						System.out.println("Down: " + mat[i+1][j]);
+					}
 				}
 			}
 		}
 		
-		
-		
-		
-		
 		sc.close();
-
 	}
-
 }
