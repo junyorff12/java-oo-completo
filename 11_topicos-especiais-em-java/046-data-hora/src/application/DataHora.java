@@ -1,10 +1,17 @@
 package application;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 public class DataHora {
 
 	public static void main(String[] args) {
-		System.out.println("Mostrando data e hora");
 
+		LocalDate d01 = LocalDate.now();
+		LocalDateTime d02 = LocalDateTime.now();
+		
+		System.out.println("d01 = " + d01);
+		System.out.println("d02	 = " + d02);
 	}
 
 }
