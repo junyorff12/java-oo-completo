@@ -11,9 +11,11 @@ public class DataHora {
 		
 		DateTimeFormatter fmt01 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter fmt02 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		DateTimeFormatter fmt03 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 		
 		LocalDate d05 = LocalDate.parse("25/04/1987", fmt01);
 		LocalDateTime d06 = LocalDateTime.parse("25/04/1987 01:30", fmt02);
+		LocalDateTime d07 = LocalDateTime.parse("25/04/1987 01:30:31", fmt03);
 
 		LocalDate d01 = LocalDate.now();
 		LocalDateTime d02 = LocalDateTime.now();
@@ -27,6 +29,7 @@ public class DataHora {
 		System.out.println("d04	= " + d04);
 		System.out.println("d05	= " + d05);
 		System.out.println("d06	= " + d06);
+		System.out.println("d06	= " + d07);
 	}
 
 }
