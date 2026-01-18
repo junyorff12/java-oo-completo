@@ -33,9 +33,9 @@ public class Program {
 		System.out.println("d05 minuto: " + d05.getMinute());
 		System.out.println("d05 minuto: " + d05.getSecond());
 		
-		/*
-		 * for(String s : ZoneId.getAvailableZoneIds()) { System.out.println(s); }
-		 */
+		
+		  for(String s : ZoneId.getAvailableZoneIds()) { System.out.println(s); }
+		 
 	}
 
 }
