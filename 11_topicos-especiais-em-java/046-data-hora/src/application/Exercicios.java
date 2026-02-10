@@ -17,5 +17,14 @@ public class Exercicios {
 		System.out.println(p.getMonths());
 		System.out.println(p.getYears());
 		System.out.println(p.getDays());
+		
+		// data de hoje daqui 30 dias.
+		
+		LocalDate hoje = LocalDate.now();
+		
+		LocalDate daquiTrintaDias = hoje.plusDays(30);
+		
+		System.out.println(daquiTrintaDias);
+				
 	}
 }
