@@ -10,6 +10,10 @@ public class Exercicios {
 		
 		Period p = Period.between(inicialD, finalD);
 		
+		LocalDateTime ldt = LocalDateTime.of(2026, 02, 9, 23, 21);
+		
+		System.out.println(ldt);
+		
 		System.out.println(p.getMonths());
 		System.out.println(p.getYears());
 		System.out.println(p.getDays());
