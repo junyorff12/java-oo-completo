@@ -1,6 +1,7 @@
 package application;
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 
 public class Exercicios {
 	
@@ -25,6 +26,14 @@ public class Exercicios {
 		LocalDate daquiTrintaDias = hoje.plusDays(30);
 		
 		System.out.println(daquiTrintaDias);
+		
+		//formatando datas 
+		
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+		LocalDate DataFormatada = LocalDate.parse("12/02/2026", dtf);
+		
+		System.out.println("dtf " + DataFormatada);
 				
 	}
 }
