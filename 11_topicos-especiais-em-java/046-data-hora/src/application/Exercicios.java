@@ -2,6 +2,7 @@ package application;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
 public class Exercicios {
 	
@@ -34,6 +35,24 @@ public class Exercicios {
 		LocalDate DataFormatada = LocalDate.parse("12/02/2026", dtf);
 		
 		System.out.println("dtf " + DataFormatada);
+		
+		//formato predefinido
+		
+		DateTimeFormatter dtfPre = DateTimeFormatter.ISO_LOCAL_DATE;
+		
+		LocalDate dataPre = LocalDate.now();
+		
+		System.out.println(dataPre.format(dtfPre));
+		
+		//Formatando com Locale
+		
+		DateTimeFormatter dtfPTBR = DateTimeFormatter.ofPattern("dd 'de' MMMM 'de' yyyy", Locale.of("pt", "BR"));
+		
+		LocalDate dataPTBR = LocalDate.now();
+		
+		System.out.println(dataPTBR.format(dtfPTBR));
+		
+		
 				
 	}
 }
