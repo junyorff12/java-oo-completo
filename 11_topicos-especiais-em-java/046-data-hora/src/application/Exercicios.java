@@ -1,5 +1,6 @@
 package application;
 
+import java.sql.Date;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -28,13 +29,23 @@ public class Exercicios {
 		
 		System.out.println(daquiTrintaDias);
 		
-		//formatando datas 
+		//formatando datas parse (texto para Datas)
 		
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		
 		LocalDate DataFormatada = LocalDate.parse("12/02/2026", dtf);
 		
 		System.out.println("dtf " + DataFormatada);
+		
+		//formatando datas (Datas para texto)
+		
+		DateTimeFormatter dtfPataTexto = DateTimeFormatter.ofPattern("dd,MMM,yyyy");
+		
+		LocalDate ld = LocalDate.of(2026, 02, 14);
+		
+		System.out.println("Data para Texto " + ld.format(dtfPataTexto));
+		
+		
 		
 		//formato predefinido
 		
@@ -48,7 +59,7 @@ public class Exercicios {
 		
 		DateTimeFormatter dtfPTBR = DateTimeFormatter.ofPattern("dd 'de' MMMM 'de' yyyy", Locale.of("pt", "BR"));
 		
-		LocalDate dataPTBR = LocalDate.now();
+		LocalDate dataPTBR = LocalDate.now();	
 		
 		System.out.println(dataPTBR.format(dtfPTBR));
 		
