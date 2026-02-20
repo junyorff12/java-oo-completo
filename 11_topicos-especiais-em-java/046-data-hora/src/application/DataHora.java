@@ -1,8 +1,10 @@
 package application;
 
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class DataHora {
@@ -38,6 +40,18 @@ public class DataHora {
 		System.out.println("d09 = " + d09);
 		System.out.println("d10 = " + d10);
 		System.out.println("d11 = " + d11);
+		
+		//Diferença entre periodos. usando Duration
+		
+		LocalTime lt1 = LocalTime.of(9, 0);
+		LocalTime lt2 = LocalTime.of(11, 30);
+		
+		Duration duracao = Duration.between(lt1, lt2);
+		
+		System.out.println("horas " + duracao.toHours());
+		System.out.println("minutos " + duracao.toMinutes());
+		
+		
 		
 	}
 	
