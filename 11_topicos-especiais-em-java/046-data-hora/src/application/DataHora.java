@@ -5,6 +5,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
 public class DataHora {
@@ -51,7 +52,10 @@ public class DataHora {
 		System.out.println("horas " + duracao.toHours());
 		System.out.println("minutos " + duracao.toMinutes());
 		
+		//diferença utilizando, Period
 		
+		Period period = Period.between(d08, d10);
+		System.out.println(period.getDays());
 		
 	}
 	
