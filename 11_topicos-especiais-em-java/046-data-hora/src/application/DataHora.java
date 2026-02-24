@@ -5,6 +5,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.OffsetDateTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
@@ -56,6 +57,11 @@ public class DataHora {
 		
 		Period period = Period.between(d08, d10);
 		System.out.println(period.getDays());
+		
+		//OffsetDateTime
+		
+		OffsetDateTime odt = OffsetDateTime.now();
+		System.out.println(odt);
 		
 	}
 	
