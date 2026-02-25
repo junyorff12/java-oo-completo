@@ -8,6 +8,7 @@ import java.time.LocalTime;
 import java.time.OffsetDateTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAdjusters;
 
 public class DataHora {
 
@@ -62,6 +63,14 @@ public class DataHora {
 		
 		OffsetDateTime odt = OffsetDateTime.now();
 		System.out.println(odt);
+		
+		//Usando TemporalAjusters
+		
+		LocalDate novaData = LocalDate.of(2026, 2, 24);
+		
+		LocalDate ultimoDiaDoMes = novaData.with(TemporalAdjusters.lastDayOfMonth());
+		
+		System.out.println("Ultimo dia do mês " + ultimoDiaDoMes.format(DateTimeFormatter.ofPattern("dd/MM/yyy")));
 		
 	}
 	
