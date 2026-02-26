@@ -16,6 +16,8 @@ public class Application {
 		
 		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		
+		//especificando o fuso Horario: ZoneId
 		DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
 		
 		DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
@@ -27,10 +29,12 @@ public class Application {
 		System.out.println("d05 : " + d05.format(fmt1));
 		System.out.println("d05 : " + d05.format(fmt2));
 		
+		//instant não tem o método .format
 		System.out.println("d06 : " + fmt3.format(d06));
 		
 		System.out.println("d05 : " + d05.format(fmt4));
 		
+		//instant não tem o método .format
 		System.out.println("d05 : " + fmt5.format(d06));
 		
 	}
