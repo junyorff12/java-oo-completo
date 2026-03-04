@@ -14,7 +14,7 @@ public class Program {
 		
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(d);
-		calendar.add(calendar.HOUR_OF_DAY, 4);
+		calendar.add(Calendar.HOUR_OF_DAY, 4);
 		
 		d = calendar.getTime();
 		
