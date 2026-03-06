@@ -21,7 +21,7 @@ public class Program {
 		System.out.println(sdf.format(d));
 		
 		int minutes = calendar.get(Calendar.MINUTE);
-		int month = 1 + calendar.get(calendar.MONTH);//o mes no Calendar comeca com 0
+		int month = 1 + calendar.get(Calendar.MONTH);//o mes no Calendar comeca com 0
 		System.out.println(minutes);
 		System.out.println(month);
 
