@@ -2,6 +2,9 @@ package application;
 
 import java.text.SimpleDateFormat;
 import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
+import java.time.ZoneOffset;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -24,6 +27,15 @@ public class Program {
 		int month = 1 + calendar.get(Calendar.MONTH);//o mes no Calendar comeca com 0
 		System.out.println(minutes);
 		System.out.println(month);
+		
+
+		Instant agoraUtc = Instant.now();
+		System.out.println(agoraUtc);
+		
+		LocalDateTime horaLocal = LocalDateTime.now();
+		OffsetDateTime emUtc = horaLocal.atOffset(ZoneOffset.UTC);
+		
+		System.out.println("emUtc : " + emUtc);
 
 	}
 
